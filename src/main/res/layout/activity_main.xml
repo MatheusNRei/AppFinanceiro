@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/BttnClear"
+        android:layout_width="127dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="264dp"
+        android:text="Limpar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/BttnCalc"
+        android:layout_width="127dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="264dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/RadGroupOp"
+        android:layout_width="127dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="241dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/Rad180"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Até 180 dias" />
+
+        <RadioButton
+            android:id="@+id/Rad360"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="De 180 a 360 dias" />
+
+        <RadioButton
+            android:id="@+id/Rad720"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="De 360 a 720 dias" />
+
+        <RadioButton
+            android:id="@+id/Rad3a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acima de 720 dias" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/CDIBase"
+        android:layout_width="277dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="47dp"
+        android:contentDescription="Valor1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CDIReal"
+        android:layout_width="277dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="129dp"
+        android:contentDescription="Valor2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
